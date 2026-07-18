@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="ReLuNet.Application/ReLuNet.Application.csproj" />
+  <Project Path="ReLuNet.Core/ReLuNet.Core.csproj" />
+  <Project Path="ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj" />
+  <Project Path="ReLuNet.Web/ReLuNet.Web.csproj" />
+</Solution>

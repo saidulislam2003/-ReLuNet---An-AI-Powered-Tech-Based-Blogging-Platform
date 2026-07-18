@@ -1,0 +1,46 @@
+@model ReLuNet.Web.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="auth-card">
+    <h3>Create account</h3>
+
+    <form asp-action="Register" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" style="font-size:0.875rem;"></div>
+
+        <div class="mb-3">
+            <label asp-for="DisplayName" class="form-label"></label>
+            <input asp-for="DisplayName" class="form-control" placeholder="Your name" />
+            <span asp-validation-for="DisplayName" class="text-danger" style="font-size:0.8rem;"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" placeholder="you@example.com" />
+            <span asp-validation-for="Email" class="text-danger" style="font-size:0.8rem;"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" class="form-control" placeholder="••••••••" />
+            <span asp-validation-for="Password" class="text-danger" style="font-size:0.8rem;"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="ConfirmPassword" class="form-label"></label>
+            <input asp-for="ConfirmPassword" class="form-control" placeholder="••••••••" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger" style="font-size:0.8rem;"></span>
+        </div>
+
+        <button type="submit" class="btn-accent w-100 mb-3">Create Account</button>
+    </form>
+
+    <div style="text-align:center; color:var(--text-muted); font-size:0.875rem; margin: 16px 0;">or</div>
+
+    <a asp-action="GoogleLogin" class="btn-ghost w-100 text-center d-block mb-4">Continue with Google</a>
+
+    <p style="text-align:center; color:var(--text-muted); font-size:0.875rem;">
+        Already have an account? <a asp-action="Login">Login</a>
+    </p>
+</div>

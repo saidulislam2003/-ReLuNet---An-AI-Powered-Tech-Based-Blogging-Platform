@@ -1,0 +1,17 @@
+D:\ReLUNet\ReLuNet.Infrastructure\bin\Debug\net10.0\ReLuNet.Infrastructure.deps.json
+D:\ReLUNet\ReLuNet.Infrastructure\bin\Debug\net10.0\ReLuNet.Infrastructure.dll
+D:\ReLUNet\ReLuNet.Infrastructure\bin\Debug\net10.0\ReLuNet.Infrastructure.pdb
+D:\ReLUNet\ReLuNet.Infrastructure\bin\Debug\net10.0\ReLuNet.Core.dll
+D:\ReLUNet\ReLuNet.Infrastructure\bin\Debug\net10.0\ReLuNet.Core.pdb
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.csproj.AssemblyReference.cache
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.AssemblyInfoInputs.cache
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.AssemblyInfo.cs
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.csproj.CoreCompileInputs.cache
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet..8B231435.Up2Date
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.dll
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\refint\ReLuNet.Infrastructure.dll
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.pdb
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ref\ReLuNet.Infrastructure.dll
+D:\ReLUNet\ReLuNet.Infrastructure\bin\Debug\net10.0\ReLuNet.Infrastructure.runtimeconfig.json
+D:\ReLUNet\ReLuNet.Infrastructure\obj\Debug\net10.0\ReLuNet.Infrastructure.genruntimeconfig.cache

@@ -1,0 +1,48 @@
+@model List<ReLuNet.Core.Entities.Article>
+@{
+    ViewData["Title"] = "My Articles";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>My Articles</h3>
+        <a asp-action="Create" class="btn btn-primary">+ New Article</a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <p class="text-muted">You haven't written any articles yet.</p>
+    }
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Created</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var article in Model)
+            {
+                <tr>
+                    <td>@article.Title</td>
+                    <td>
+                        <span class="badge @(article.Status == ReLuNet.Core.Entities.ArticleStatus.Published ? "bg-success" : "bg-warning text-dark")">
+                            @article.Status
+                        </span>
+                    </td>
+                    <td>@article.CreatedAt.ToString("MMM dd, yyyy")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@article.Id" class="btn btn-sm btn-outline-primary">Edit</a>
+                        <form asp-action="Delete" asp-route-id="@article.Id" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-sm btn-outline-danger"
+                                    onclick="return confirm('Delete this article?')">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
