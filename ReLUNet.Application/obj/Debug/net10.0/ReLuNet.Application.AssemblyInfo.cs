@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReLuNet.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3320d35d2285aef4b2a683e9e64deb26fe6ad3e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb36ac4a1c2fa84610da58c3a46b03d8bbcc48b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReLuNet.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReLuNet.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
