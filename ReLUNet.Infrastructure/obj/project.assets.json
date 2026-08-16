@@ -4126,11 +4126,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
+      "projectUniqueName": "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
       "projectName": "ReLuNet.Infrastructure",
-      "projectPath": "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
+      "projectPath": "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Saidul Islam\\.nuget\\packages\\",
-      "outputPath": "D:\\ReLUNet\\ReLuNet.Infrastructure\\obj\\",
+      "outputPath": "D:\\ReLuNet\\ReLuNet.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4152,8 +4152,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
-              "projectPath": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj"
+            "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
+              "projectPath": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj"
             }
           }
         }

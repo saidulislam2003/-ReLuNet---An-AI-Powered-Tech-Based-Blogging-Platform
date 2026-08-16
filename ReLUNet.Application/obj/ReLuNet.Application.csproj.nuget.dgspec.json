@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ReLUNet\\ReLuNet.Application\\ReLuNet.Application.csproj": {}
+    "D:\\ReLuNet\\ReLuNet.Application\\ReLuNet.Application.csproj": {}
   },
   "projects": {
-    "D:\\ReLUNet\\ReLuNet.Application\\ReLuNet.Application.csproj": {
+    "D:\\ReLuNet\\ReLuNet.Application\\ReLuNet.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ReLUNet\\ReLuNet.Application\\ReLuNet.Application.csproj",
+        "projectUniqueName": "D:\\ReLuNet\\ReLuNet.Application\\ReLuNet.Application.csproj",
         "projectName": "ReLuNet.Application",
-        "projectPath": "D:\\ReLUNet\\ReLuNet.Application\\ReLuNet.Application.csproj",
+        "projectPath": "D:\\ReLuNet\\ReLuNet.Application\\ReLuNet.Application.csproj",
         "packagesPath": "C:\\Users\\Saidul Islam\\.nuget\\packages\\",
-        "outputPath": "D:\\ReLUNet\\ReLuNet.Application\\obj\\",
+        "outputPath": "D:\\ReLuNet\\ReLuNet.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
-                "projectPath": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj"
+              "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
+                "projectPath": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj"
               },
-              "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj": {
-                "projectPath": "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj"
+              "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj": {
+                "projectPath": "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj"
               }
             }
           }
@@ -352,14 +352,14 @@
         }
       }
     },
-    "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
+    "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
+        "projectUniqueName": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
         "projectName": "ReLuNet.Core",
-        "projectPath": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
+        "projectPath": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
         "packagesPath": "C:\\Users\\Saidul Islam\\.nuget\\packages\\",
-        "outputPath": "D:\\ReLUNet\\ReLuNet.Core\\obj\\",
+        "outputPath": "D:\\ReLuNet\\ReLuNet.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -699,14 +699,14 @@
         }
       }
     },
-    "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj": {
+    "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
+        "projectUniqueName": "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
         "projectName": "ReLuNet.Infrastructure",
-        "projectPath": "D:\\ReLUNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
+        "projectPath": "D:\\ReLuNet\\ReLuNet.Infrastructure\\ReLuNet.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Saidul Islam\\.nuget\\packages\\",
-        "outputPath": "D:\\ReLUNet\\ReLuNet.Infrastructure\\obj\\",
+        "outputPath": "D:\\ReLuNet\\ReLuNet.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -728,8 +728,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
-                "projectPath": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj"
+              "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
+                "projectPath": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj"
               }
             }
           }

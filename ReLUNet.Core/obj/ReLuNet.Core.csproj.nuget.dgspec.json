@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {}
+    "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {}
   },
   "projects": {
-    "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
+    "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
+        "projectUniqueName": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
         "projectName": "ReLuNet.Core",
-        "projectPath": "D:\\ReLUNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
+        "projectPath": "D:\\ReLuNet\\ReLuNet.Core\\ReLuNet.Core.csproj",
         "packagesPath": "C:\\Users\\Saidul Islam\\.nuget\\packages\\",
-        "outputPath": "D:\\ReLUNet\\ReLuNet.Core\\obj\\",
+        "outputPath": "D:\\ReLuNet\\ReLuNet.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
