@@ -1,0 +1,39 @@
+@model ReLuNet.Web.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="auth-card">
+    <h3>Welcome back</h3>
+
+    <form asp-action="Login" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3" style="font-size:0.875rem;"></div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control" placeholder="you@example.com" />
+            <span asp-validation-for="Email" class="text-danger" style="font-size:0.8rem;"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" class="form-control" placeholder="••••••••" />
+            <span asp-validation-for="Password" class="text-danger" style="font-size:0.8rem;"></span>
+        </div>
+
+        <div class="mb-4 form-check">
+            <input asp-for="RememberMe" class="form-check-input" />
+            <label asp-for="RememberMe" class="form-check-label" style="color:var(--text-muted); font-size:0.875rem;"></label>
+        </div>
+
+        <button type="submit" class="btn-accent w-100 mb-3">Login</button>
+    </form>
+
+    <div style="text-align:center; color:var(--text-muted); font-size:0.875rem; margin: 16px 0;">or</div>
+
+    <a asp-action="GoogleLogin" class="btn-ghost w-100 text-center d-block mb-4">Continue with Google</a>
+
+    <p style="text-align:center; color:var(--text-muted); font-size:0.875rem;">
+        Don't have an account? <a asp-action="Register">Register</a>
+    </p>
+</div>
