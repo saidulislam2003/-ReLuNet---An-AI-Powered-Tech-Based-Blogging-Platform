@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj": {}
+    "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj": {}
   },
   "projects": {
-    "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj": {
+    "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj",
+        "projectUniqueName": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj",
         "projectName": "ReLuNet.Application",
-        "projectPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj",
+        "projectPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/ReLuNet.Application.csproj",
         "packagesPath": "/Users/sojib/.nuget/packages/",
-        "outputPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/obj/",
+        "outputPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sojib/.nuget/NuGet/NuGet.Config"
@@ -27,11 +27,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj": {
-                "projectPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj"
+              "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj": {
+                "projectPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj"
               },
-              "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj": {
-                "projectPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj"
+              "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj": {
+                "projectPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj"
               }
             }
           }
@@ -346,14 +346,14 @@
         }
       }
     },
-    "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj": {
+    "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj",
+        "projectUniqueName": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj",
         "projectName": "ReLuNet.Core",
-        "projectPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj",
+        "projectPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj",
         "packagesPath": "/Users/sojib/.nuget/packages/",
-        "outputPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/obj/",
+        "outputPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sojib/.nuget/NuGet/NuGet.Config"
@@ -687,14 +687,14 @@
         }
       }
     },
-    "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj": {
+    "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj",
+        "projectUniqueName": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj",
         "projectName": "ReLuNet.Infrastructure",
-        "projectPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj",
+        "projectPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/ReLuNet.Infrastructure.csproj",
         "packagesPath": "/Users/sojib/.nuget/packages/",
-        "outputPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/obj/",
+        "outputPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sojib/.nuget/NuGet/NuGet.Config"
@@ -710,8 +710,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj": {
-                "projectPath": "/Users/sojib/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj"
+              "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj": {
+                "projectPath": "/Users/sojib/Desktop/-ReLuNet---An-AI-Powered-Tech-Based-Blogging-Platform/ReLuNet.Core/ReLuNet.Core.csproj"
               }
             }
           }
@@ -746,6 +746,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.9, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[10.0.11, )"
             }
           },
           "imports": [

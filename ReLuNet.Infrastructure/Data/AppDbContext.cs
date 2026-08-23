@@ -16,6 +16,7 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Comment> Comments => Set<Comment>();
     public DbSet<Like> Likes => Set<Like>();
     public DbSet<Bookmark> Bookmarks => Set<Bookmark>();
+    public DbSet<ArticleEmbedding> ArticleEmbeddings => Set<ArticleEmbedding>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -86,5 +87,11 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
         builder.Entity<Tag>()
             .HasIndex(t => t.Slug)
             .IsUnique();
+
+        builder.Entity<ArticleEmbedding>()
+            .HasOne(e => e.Article)
+            .WithOne()
+            .HasForeignKey<ArticleEmbedding>(e => e.ArticleId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

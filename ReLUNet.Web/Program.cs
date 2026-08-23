@@ -45,6 +45,7 @@ builder.Services.AddAuthentication()
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IArticleService, ArticleService>();
 builder.Services.AddScoped<IAIService, AIService>();
+builder.Services.AddHttpClient();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

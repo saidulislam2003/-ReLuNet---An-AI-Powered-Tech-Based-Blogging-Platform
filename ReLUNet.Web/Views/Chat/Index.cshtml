@@ -1,0 +1,321 @@
+@{
+    ViewData["Title"] = "AI Assistant";
+}
+
+<div class="chat-page">
+    <div class="chat-header">
+        <div class="container">
+            <h1>&#129302; ReLuNet AI Assistant</h1>
+            <p>Ask me anything about tech, AI, programming. I'll guide you and recommend relevant articles.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-message assistant">
+                    <div class="message-content">
+                        <p>Hi! I'm your ReLuNet AI Assistant. Ask me about any tech topic and I'll guide you with personalized recommendations from our article library.</p>
+                        <p style="color:var(--text-muted); font-size:0.85rem; margin-top:8px;">Try: "I know Python basics, how do I start with machine learning?"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="chat-input-wrapper">
+                    <textarea id="chatInput"
+                              placeholder="Ask me anything about tech, AI, programming..."
+                              rows="1"></textarea>
+                    <button id="sendBtn" onclick="sendMessage()">Send</button>
+                </div>
+                <p style="color:var(--text-muted); font-size:0.75rem; margin-top:8px; text-align:center;">
+                    Powered by Gemini AI + ReLuNet articles
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .chat-page { min-height: 100vh; display: flex; flex-direction: column; }
+
+        .chat-header {
+            padding: 40px 0 32px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .chat-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+        .chat-header p { color: var(--text-muted); font-size: 0.95rem; }
+
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .chat-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-height: 400px;
+        }
+
+        .chat-message { display: flex; gap: 12px; }
+
+        .chat-message.user { flex-direction: row-reverse; }
+
+        .message-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            max-width: 80%;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .chat-message.user .message-content {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        .message-content p { margin-bottom: 8px; }
+        .message-content p:last-child { margin-bottom: 0; }
+
+        .article-recommendations {
+            margin-top: 16px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 12px;
+        }
+
+        .article-recommendations h4 {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .rec-article {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .rec-article:hover {
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .rec-article-title {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .rec-article-meta {
+            color: var(--text-muted);
+            font-size: 0.775rem;
+            margin-top: 2px;
+        }
+
+        .chat-input-area {
+            position: sticky;
+            bottom: 20px;
+        }
+
+        .chat-input-wrapper {
+            display: flex;
+            gap: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            padding: 12px;
+            transition: var(--transition);
+        }
+
+        .chat-input-wrapper:focus-within {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-soft);
+        }
+
+        .chat-input-wrapper textarea {
+            flex: 1;
+            background: none;
+            border: none;
+            outline: none;
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            resize: none;
+            line-height: 1.5;
+        }
+
+        .chat-input-wrapper textarea::placeholder { color: var(--text-muted); }
+
+        .chat-input-wrapper button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 8px 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: var(--transition);
+            align-self: flex-end;
+        }
+
+        .chat-input-wrapper button:hover { background: var(--accent-hover); }
+        .chat-input-wrapper button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 8px 0;
+        }
+
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: typingBounce 1.2s infinite;
+        }
+
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @@keyframes typingBounce {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-8px); }
+        }
+    </style>
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const input = document.getElementById('chatInput');
+        const messages = document.getElementById('chatMessages');
+        const sendBtn = document.getElementById('sendBtn');
+
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        input.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+        });
+
+        async function sendMessage() {
+            const query = input.value.trim();
+            if (!query) return;
+
+            appendMessage(query, 'user');
+            input.value = '';
+            input.style.height = 'auto';
+            sendBtn.disabled = true;
+
+            const typingId = appendTyping();
+
+            try {
+                const res = await fetch('/Chat/Ask', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query })
+                });
+
+                const data = await res.json();
+                removeTyping(typingId);
+                appendAssistantMessage(data.response, data.articles);
+            } catch (err) {
+                removeTyping(typingId);
+                appendMessage('Sorry, something went wrong. Please try again.', 'assistant');
+            }
+
+            sendBtn.disabled = false;
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function appendMessage(text, role) {
+            const div = document.createElement('div');
+            div.className = `chat-message ${role}`;
+            div.innerHTML = `<div class="message-content"><p>${escapeHtml(text)}</p></div>`;
+            messages.appendChild(div);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function appendAssistantMessage(text, articles) {
+            const div = document.createElement('div');
+            div.className = 'chat-message assistant';
+
+            let html = `<div class="message-content">`;
+            html += marked.parse(text);
+
+            if (articles && articles.length > 0) {
+                html += `<div class="article-recommendations">`;
+                html += `<h4>Recommended Articles</h4>`;
+                articles.forEach(a => {
+                    html += `<a href="/Article/Read?slug=${a.slug}" class="rec-article" target="_blank">
+                        <div class="rec-article-title">${escapeHtml(a.title)}</div>
+                        <div class="rec-article-meta">by ${escapeHtml(a.author)} · ${a.readTime} min read</div>
+                    </a>`;
+                });
+                html += `</div>`;
+            }
+
+            html += `</div>`;
+            div.innerHTML = html;
+            messages.appendChild(div);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function appendTyping() {
+            const id = 'typing-' + Date.now();
+            const div = document.createElement('div');
+            div.className = 'chat-message assistant';
+            div.id = id;
+            div.innerHTML = `<div class="message-content">
+                <div class="typing-indicator">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>`;
+            messages.appendChild(div);
+            messages.scrollTop = messages.scrollHeight;
+            return id;
+        }
+
+        function removeTyping(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.appendChild(document.createTextNode(text));
+            return div.innerHTML;
+        }
+    </script>
+}
