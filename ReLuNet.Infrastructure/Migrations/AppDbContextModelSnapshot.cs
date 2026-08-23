@@ -278,30 +278,6 @@ namespace ReLuNet.Infrastructure.Migrations
                     b.ToTable("Articles");
                 });
 
-            modelBuilder.Entity("ReLuNet.Core.Entities.ArticleEmbedding", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("ArticleId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Embedding")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ArticleId")
-                        .IsUnique();
-
-                    b.ToTable("ArticleEmbeddings");
-                });
-
             modelBuilder.Entity("ReLuNet.Core.Entities.ArticleTag", b =>
                 {
                     b.Property<int>("ArticleId")
@@ -464,17 +440,6 @@ namespace ReLuNet.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Author");
-                });
-
-            modelBuilder.Entity("ReLuNet.Core.Entities.ArticleEmbedding", b =>
-                {
-                    b.HasOne("ReLuNet.Core.Entities.Article", "Article")
-                        .WithOne()
-                        .HasForeignKey("ReLuNet.Core.Entities.ArticleEmbedding", "ArticleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Article");
                 });
 
             modelBuilder.Entity("ReLuNet.Core.Entities.ArticleTag", b =>
